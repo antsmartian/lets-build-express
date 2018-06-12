@@ -1,7 +1,5 @@
 var mixin = require('merge-descriptors');
-var EventEmitter = require('events').EventEmitter;
 var proto = require("./app")
-var http = require('http');
 
 exports = module.exports = createApplication;
 

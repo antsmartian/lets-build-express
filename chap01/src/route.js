@@ -11,18 +11,7 @@ function Route(path) {
 }
 
 Route.prototype.dispatch = function dispatch(req,res,done) {
-    var idx = 0;
-    var stack = this.stack;
-    if (stack.length === 0) {
-        return done();
-    }
 
-    var method = req.method.toLowerCase();
-    if (method === 'head' && !this.methods['head']) {
-        method = 'get';
-    }
-
-    req.route = this;
 };
 
 methods.forEach(function(method){

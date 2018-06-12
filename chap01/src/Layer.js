@@ -19,14 +19,9 @@ Layer.prototype.match = function match(path) {
 Layer.prototype.handle_request = function handle(req,res,next) {
     var fn = this.handle;
 
-    if (fn.length > 3) {
-        // not a standard request handler
-        return next();
-    }
-
     try {
         fn(req, res, next);
     } catch (err) {
-        next(err);
+        console.error(err)
     }
 }

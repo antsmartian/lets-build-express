@@ -1,16 +1,9 @@
 let express = require('./src/express')
 const app = express()
 
-
-app.get('/route1', (req, res,next) => {
+app.get('/', (req, res) => {
     res.writeHead(200)
-    res.write('route 1');
-    res.end();
-});
-
-app.post('/post', (req, res) => {
-    res.writeHead(200)
-    res.write('from /post');
+    res.write('Hello world!');
     res.end();
 });
 
