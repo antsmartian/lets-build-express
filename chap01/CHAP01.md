@@ -419,11 +419,14 @@ request and response:
 
 we are using `write`, `end` to send a `Hello World`!
 
-##### If you are curious here, you might be thinking why can't I use `res.send`? Well, express.js has extended the
+##### Note:
+If you are curious here, you might be thinking why can't I use `res.send`? Well, express.js has extended the
 request object (from http module, actually its `IncomingMessage` protocol). Since we haven't gone that far, we are
 using the old-school way of sending back the data to the client.
 
 Well-done, we have created very important abstractions, that are in express source code. In fact we made a hacky
 way to response to our request.
+
+Go ahead and checkout chap01 code and run `index.js` to see our little express in action.
 
 In the next chapter, we are going to improve upon our `handle` to match the `routes` with the given URL.

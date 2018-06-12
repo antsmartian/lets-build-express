@@ -31,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CHAP01.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="428" column="104" selection-start-line="428" selection-start-column="104" selection-end-line="428" selection-end-column="104" />
+            <state relative-caret-position="360">
+              <caret line="429" column="90" selection-start-line="429" selection-start-column="90" selection-end-line="429" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/src/Layer.js" />
-        <option value="$PROJECT_DIR$/CHAP01.md" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/CHAP01.md" />
       </list>
     </option>
   </component>
@@ -228,12 +228,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528793580751</updated>
-      <workItem from="1528793582089" duration="10009000" />
+      <workItem from="1528793582089" duration="10310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10009000" />
+    <option name="totallyTimeSpent" value="10310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="937" extended-state="6" />
@@ -341,17 +341,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CHAP01.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="428" column="104" selection-start-line="428" selection-start-column="104" selection-end-line="428" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHAP01.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="429" column="90" selection-start-line="429" selection-start-column="90" selection-end-line="429" selection-end-column="90" />
         </state>
       </provider>
     </entry>

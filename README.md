@@ -6,7 +6,7 @@ Each chapter will build express step by step with running example.
 
 Here are the TOC:
 
-
+1. [Chapter 01](https://github.com/antoaravinth/lets-build-express/blob/master/chap01/CHAP01.md)
 
 #### Contributions Welcome
 Feel free to improve this repo :) Happy to accept PR.
