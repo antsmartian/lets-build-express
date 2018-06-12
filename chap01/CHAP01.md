@@ -1,7 +1,5 @@
 In this chapter, we are going to create few abstraction those are required for building a express library.
 
-Note that, I will literally use the same code / variable name etc from the express source itself.
-
 By the end of the chapter, we will have a very minimal library, which will match only one route.
 
 #### Express.js
