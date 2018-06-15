@@ -5,9 +5,6 @@ This series of chapters will teach you how to create the `express` library from 
 # Why?
 I find people do often get confused with how `next` works, or how route order works in `express`. By building the `express` library, we can gain a more solid understanding.  Also, it's fun! 
 
-#### Note
-Its work in progress, but minial working library and the tutorial is down below
-
 Each chapter will build `express` step by step with running examples.
 
 Here is the TOC:
@@ -17,6 +14,9 @@ Here is the TOC:
 3. [Chapter 03 -- Implement `next` function](https://github.com/antoaravinth/lets-build-express/blob/master/chap03/CHAP03.md)
 4. Chapter 04 -- Extending Response Object (WIP)
 5. More to come. 
+
+#### Note
+Its work in progress, but minimal working library and the corresponding tutorial is done. 
 
 #### Contributions Welcome
 Feel free to improve this repo: grammar mistakes, technical glitches, maybe translations?  Happy to accept PRs.
