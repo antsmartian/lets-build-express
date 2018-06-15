@@ -1,0 +1,19 @@
+{
+  "name": "chap01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "array-flatten": "^2.1.1",
+    "express": "^4.16.3",
+    "merge-descriptors": "^1.0.1",
+    "methods": "^1.1.2",
+    "parseurl": "^1.3.2",
+    "setprototypeof": "^1.1.0"
+  }
+}

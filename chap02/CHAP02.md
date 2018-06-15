@@ -80,6 +80,7 @@ Ok, lets understand whats going on here. I have defined a variable called `match
 `stack` is empty (all our config is pushed into Router's stack). We will pick each `layer` out of the stack and call
 `matchLayer`. We will implement `matchLayer` in a moment, but assume it returns boolean if a path is matched at a given
 `layer` object. If so, we will pick its `route` and then call the `route`'s `handle_request` by passing `req` & `res`.
+Else repeat until the `stack` is empty.
 
 The implementation of `matchLayer` looks like this:
 

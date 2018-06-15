@@ -11,6 +11,7 @@ Here are the TOC:
 
 1. [Chapter 01 -- Building Express Abstractions](https://github.com/antoaravinth/lets-build-express/blob/master/chap01/CHAP01.md)
 2. [Chapter 02 -- Handling routes out of the box](https://github.com/antoaravinth/lets-build-express/blob/master/chap02/CHAP02.md)
+3. [Chapter 03 -- Implement `next` function](https://github.com/antoaravinth/lets-build-express/blob/master/chap03/CHAP03.md)
 
 #### Contributions Welcome
 Feel free to improve this repo -- grammar mistake, technical glitches , may be in other languages too?. Happy to accept PR.

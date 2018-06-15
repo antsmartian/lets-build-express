@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d42fb2c7-4198-41b2-9d66-5b7b6d7d0081" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap01/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/chap01/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chap01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap02/CHAP02.md" beforeDir="false" afterPath="$PROJECT_DIR$/chap02/CHAP02.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,28 +18,55 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chap01/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chap02/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap02/CHAP02.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
+            <state relative-caret-position="336">
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap03/CHAP03.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="755">
+              <caret line="118" column="105" selection-start-line="118" selection-start-column="105" selection-end-line="118" selection-end-column="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap03/src/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="40" selection-start-line="40" selection-end-line="71" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap03/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="22" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap03/src/Layer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" selection-start-line="18" selection-end-line="26" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap03/node_modules/express/lib/router/layer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -48,16 +74,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="103" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
+            <state relative-caret-position="247">
+              <caret line="13" column="121" selection-start-line="13" selection-start-column="121" selection-end-line="13" selection-end-column="121" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chap02/src/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-570" />
           </provider>
         </entry>
       </file>
@@ -80,24 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chap02/src/route.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap02/src/Layer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
               <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chap01/src/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="39" selection-start-line="39" selection-end-line="45" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -115,6 +120,9 @@
         <option value="$PROJECT_DIR$/chap02/src/router.js" />
         <option value="$PROJECT_DIR$/chap02/index.js" />
         <option value="$PROJECT_DIR$/chap02/CHAP02.md" />
+        <option value="$PROJECT_DIR$/chap03/src/router.js" />
+        <option value="$PROJECT_DIR$/chap03/index.js" />
+        <option value="$PROJECT_DIR$/chap03/CHAP03.md" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -128,6 +136,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/chap01/node_modules" />
     <handled-path value="$PROJECT_DIR$/chap02/node_modules" />
+    <handled-path value="$PROJECT_DIR$/chap03/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -184,6 +193,7 @@
       <path value="$PROJECT_DIR$/chap01/node_modules/vary/package.json" />
       <path value="$PROJECT_DIR$/chap01/package.json" />
       <path value="$PROJECT_DIR$/chap02/package.json" />
+      <path value="$PROJECT_DIR$/chap03/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -206,23 +216,12 @@
             <path>
               <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
               <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
-              <item name="chap01" type="462c0819:PsiDirectoryNode" />
+              <item name="chap03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
               <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
-              <item name="chap01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
-              <item name="chap02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
-              <item name="chap02" type="462c0819:PsiDirectoryNode" />
+              <item name="chap03" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -265,12 +264,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529034201005</updated>
-      <workItem from="1529034202134" duration="1596000" />
+      <workItem from="1529034202134" duration="3460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1596000" />
+    <option name="totallyTimeSpent" value="3460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="937" extended-state="6" />
@@ -354,15 +353,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chap02/CHAP02.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
+        <state relative-caret-position="336">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/node_modules/express/lib/router/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="40" selection-start-line="40" selection-end-line="71" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/src/Layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/CHAP03.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="118" column="105" selection-start-line="118" selection-start-column="105" selection-end-line="118" selection-end-column="105" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="103" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
+        <state relative-caret-position="247">
+          <caret line="13" column="121" selection-start-line="13" selection-start-column="121" selection-end-line="13" selection-end-column="121" />
         </state>
       </provider>
     </entry>
