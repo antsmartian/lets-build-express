@@ -5,7 +5,7 @@ By the end of the chapter, we will have a very minimal library, which will match
 #### Express.js
 First let us create our simple `express.js` file, which will have `export`. The file looks like the following:
 
-```
+```JavaScript
 exports = module.exports = createApplication;
 
 function createApplication() {
@@ -28,7 +28,7 @@ We are going to create our `app.js`, which is going to expose methods like `get`
 
 Let's have our init code for `app.js` like the following:
 
-```
+```JavaScript
 var app = exports = module.exports = {};
 
 app.init = function() {
@@ -43,13 +43,13 @@ implement the same.
 
 The approach that is taken in express source code is very simple. They are using a library called `methods`:
 
-```
+```JavaScript
 var methods = require('methods');
 ```
 
 once we require that library, we can go ahead and implement all our HTTP methods like the following:
 
-```
+```JavaScript
 methods.forEach(function (method){
     app[method] = function(path) {
         this.lazyrouter()
@@ -66,7 +66,7 @@ Here we are iterating over the available methods, and creating the functions on 
 quite a few interesting things happening. The function calls `this.lazyrouter()` -- which means for the given application
 we are going to create an `Router`. The code for  `lazyrouter` looks like the following:
 
-```
+```JavaScript
 app.lazyrouter = function lazyrouter() {
     if(!this._router) {
         this._router = new Router({
@@ -85,7 +85,7 @@ As the name suggest, we are first checking if `this._router` is present, if not 
 
 We will come back to this piece of code later in this chapter:
 
-```
+```JavaScript
 var route = this._router.route(path);
 
 route[method].apply(route, slice.call(arguments, 1));
@@ -99,7 +99,7 @@ Now, its time for us to create a Router function.
 
 The `router.js` has the following code:
 
-```
+```JavaScript
 var proto = module.exports = function(options) {
     var opts = options || {}
 
@@ -128,7 +128,7 @@ This is where our route configs goes into.
 Now we have our router - which internally has `stack` to keep our routes inclined. We need to expose a function, so that user can
 add specific routes into the `stack`. This function is called as `route`:
 
-```
+```JavaScript
 proto.route = function route(path) {
     var route = new Route(path)
 
@@ -151,7 +151,7 @@ The `layer` contains the `route`. `Layer` also takes few properties, which we wi
 
 After creating the route and layer, we are pushing the data into the routers `stack` on this line:
 
-```
+```JavaScript
 this.stack.push(layer);
 ```
 
@@ -165,7 +165,7 @@ The code `route.dispatch.bind(route)` is actually an empty function for now -- w
 
 The main function of `Route` is going to look like the following:
 
-```
+```JavaScript
 function Route(path) {
     this.path = path;
     this.stack = [];
@@ -176,7 +176,7 @@ function Route(path) {
 
 Unsurprisingly, the Route also implements all the HTTP methods very similar to application like the following:
 
-```
+```JavaScript
 methods.forEach(function(method){
     Route.prototype[method] = function(){
         var handles = flatten(Array.prototype.slice.call(arguments));
@@ -209,7 +209,7 @@ Note here, the route also has its own `stack` with its own instance of `Layer`.
 
 We haven't created this file yet, the whole file looks like the following:
 
-```
+```JavaScript
 module.exports = Layer
 
 function Layer(path, options, fn) {
@@ -230,7 +230,7 @@ It just holds the `handle` and the function names.
 
 Now lets understand the remaining piece in application `methods` implementation:
 
-```
+```JavaScript
 methods.forEach(function (method){
     app[method] = function(path) {
         this.lazyrouter()
@@ -247,7 +247,7 @@ Once we create the lazy router, we are are setting up the `router's` details via
 one router (See the implementation of  `lazyrouter`). Since our `Route` also implements all the HTTP methods, we are
 calling the `route` method, by passing in the incoming argument:
 
-```
+```JavaScript
 route[method].apply(route, slice.call(arguments, 1));
 ```
 
@@ -256,7 +256,7 @@ handle we need to get executed when a path is matched).
 
 Also we are going to expose a `listen` function on application:
 
-```
+```JavaScript
 app.listen = function listen() {
     var server = http.createServer(this);
     return server.listen.apply(server, arguments);
@@ -267,7 +267,7 @@ The listen function creates the HTTP server via node module `http`. It then star
 
 With `listen` function in place, we can change our `express.js`'s `createApplication` to be:
 
-```
+```JavaScript
 var proto = require("./app")
 
 . . .
@@ -290,7 +290,7 @@ the line `mixin(app,proto,false)` app has all the HTTP methods :)
 Here are we copying all the `app.js` methods to our little `app` function via `mixin` module. Now its evident that we
 need to create a function called `handle` in our `app.js` file:
 
-```
+```JavaScript
 app.handle = function handle(req, res, callback) {
     var router = this._router;
 
@@ -300,7 +300,7 @@ app.handle = function handle(req, res, callback) {
 
 We will implement `Router` `handle` for now, lets just print its stack:
 
-```
+```JavaScript
 proto.handle = function handle(req, res, out) {
     var self = this;
     var stack = self.stack;
@@ -312,7 +312,7 @@ proto.handle = function handle(req, res, out) {
 #### Playing Around
 With all these codes in place, we are good to use our little express library:
 
-```
+```JavaScript
 let express = require('./src/express')
 const app = express()
 
@@ -380,7 +380,7 @@ If we run this code the following things will happen:
 
 Lets do a hack way to send some response from the router:
 
-```
+```JavaScript
 proto.handle = function handle(req, res, out) {
     var self = this;
     var stack = self.stack;
@@ -395,7 +395,7 @@ for that route get its stack (Route stack contains `Layer`) and call `handle_req
 
 The `Layer` `handle_request` has the following code:
 
-```
+```JavaScript
 Layer.prototype.handle_request = function handle(req,res,next) {
     var fn = this.handle;
 
@@ -410,7 +410,7 @@ Layer.prototype.handle_request = function handle(req,res,next) {
 Awesome! Now try restarting your code. Go and hit `/`, what happens? Our callback will be called with the current
 request and response:
 
-```
+```JavaScript
 (req, res) => {
     res.writeHead(200)
     res.write('Hello world');
