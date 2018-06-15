@@ -6,7 +6,7 @@ end of the chapter.
 In express, you can do this:
 
 
-```
+```JavaScript
 app.get('/route1', (req, res,next) => {
     console.log("came here")
     next();
@@ -27,7 +27,7 @@ to hold our route paths, so implementing `next` is super easy.
 
 Lets make the necessary modifications to our `Router`'s `handle` :
 
-```
+```JavaScript
 proto.handle = function handle(req, res, out) {
     var self = this;
     var stack = self.stack;
@@ -65,7 +65,7 @@ proto.handle = function handle(req, res, out) {
 We have just simply created a function called `next` and called that function. Take a close look at the implementation.
 `next` is also passed as argument to `handle_request`. In fact our `Layer`'s `handle_request` expects `next`:
 
-```
+```JavaScript
 Layer.prototype.handle_request = function handle(req,res,next) {
     var fn = this.handle;
 
@@ -84,7 +84,7 @@ resume the processing of stack from where it stopped (oh, sounds more like a gen
 Now with these changes in place, we can actually make use of `next`:
 
 
-```
+```JavaScript
 let express = require('./src/express')
 const app = express()
 
