@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d42fb2c7-4198-41b2-9d66-5b7b6d7d0081" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/chap01/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chap01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chap01/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap01/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap02/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap02/CHAP02.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="103" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap02/src/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-570" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap02/src/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="77" selection-start-line="77" selection-end-line="83" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap02/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap02/src/route.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap02/src/Layer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap01/src/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="39" selection-start-line="39" selection-end-line="45" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/chap01/.gitignore" />
+        <option value="$PROJECT_DIR$/chap02/.gitignore" />
+        <option value="$PROJECT_DIR$/chap02/src/router.js" />
+        <option value="$PROJECT_DIR$/chap02/index.js" />
+        <option value="$PROJECT_DIR$/chap02/CHAP02.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/chap01/node_modules" />
+    <handled-path value="$PROJECT_DIR$/chap02/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/chap01/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/express/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/raw-body/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/raw-body/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/raw-body/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/chap01/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/chap01/package.json" />
+      <path value="$PROJECT_DIR$/chap02/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="937" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
+              <item name="chap01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
+              <item name="chap01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
+              <item name="chap02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
+              <item name="chap02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chap02" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d42fb2c7-4198-41b2-9d66-5b7b6d7d0081" name="Default" comment="" />
+      <created>1529034201005</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529034201005</updated>
+      <workItem from="1529034202134" duration="1596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1596000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="937" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/chap01/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap02/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap02/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap02/src/route.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap01/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" selection-start-line="39" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap02/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="77" selection-start-line="77" selection-end-line="83" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap02/src/Layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap02/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap02/CHAP02.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="125" column="3" lean-forward="true" selection-start-line="125" selection-start-column="3" selection-end-line="125" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="103" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
