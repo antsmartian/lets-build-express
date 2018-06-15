@@ -332,7 +332,6 @@ If we run this code the following things will happen:
 2. `app` contains the reference to the fn returned by `createApplication`.
 3. `app.get` calls the function:
 
-       ```
         app[method] = function(path) {
                 this.lazyrouter()
 
@@ -341,9 +340,9 @@ If we run this code the following things will happen:
                 route[method].apply(route, slice.call(arguments, 1));
                 return this;
             }
-       ```
 
-       Now, this sets our Router. Also sets `Route` and corresponding layer object (along with callback in `handle`).
+
+   Now, this sets our Router. Also sets `Route` and corresponding layer object (along with callback in `handle`).
 
 4. When `app.listen` is called, interesting things happens. Lets peak into our `app.listen` code:
 
@@ -352,18 +351,19 @@ If we run this code the following things will happen:
             return server.listen.apply(server, arguments);
         ```
 
-        we are passing `this` to `createServer`. `createServer` actually expects the callback function, which
-        would be getting `req` & `res` objects. Here `this` refers to the `app`, which is returned by `createApplication`.
-        Which is nothing but:
 
-        ```
+    we are passing `this` to `createServer`. `createServer` actually expects the callback function, which
+    would be getting `req` & `res` objects. Here `this` refers to the `app`, which is returned by `createApplication`.
+    Which is nothing but:
+
+
         let app = function(req,res,next) {
             app.handle(req,res,next)
         };
-        ```
 
-        from the `express.js` file. So this `app` function would be called as a callback by the `createServer`, when it
-        gets the request
+
+    from the `express.js` file. So this `app` function would be called as a callback by the `createServer`, when it
+    gets the request
 
 5. `app.handle` calls our `handle` function of Router.
 6. Now when we fire a request to `/`, we can see it prints:
