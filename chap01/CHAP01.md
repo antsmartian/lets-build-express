@@ -3,7 +3,7 @@ In this chapter, we are going to create few abstraction those are required for b
 By the end of the chapter, we will have a very minimal library, which will match only one route.
 
 #### Express.js
-First let us create our simple `express.js` file, which we will `export`. The file looks like the following:
+First let us create our simple `express.js` file, which will have `export`. The file looks like the following:
 
 ```
 exports = module.exports = createApplication;
@@ -17,7 +17,8 @@ function createApplication() {
 ```
 
 Nothing fancy over here, we are just exporting the function called `createApplication`. The function creates a function
-reference called `app` and returns it. Note that the function expects `req, res` and even `next`
+reference called `app` and returns it. Note that the function expects `req, res` and even `next`. Who will be sending
+these arguments is interesting, which we will see later.
 
 
 #### Application.js
@@ -80,7 +81,7 @@ As the name suggest, we are first checking if `this._router` is present, if not 
 
 
 ##### Note: We are passing params like `caseSensitive` , `strict` -- which we will see in the upcoming chapters. The
-`enabled` implementation is straight forward, so skipping the implementation part.
+`enabled` implementation is straight forward, so skipping the implementation details here.
 
 We will come back to this piece of code later in this chapter:
 
@@ -146,7 +147,7 @@ proto.route = function route(path) {
 ```
 
 For a given `path` (a route actually) we are creating a `Route` and a `Layer` (more on that in the next section).
-The `layer` contains the `route`. `Layer` also takes few properties, which we will see in later in the chapter.
+The `layer` contains the `route`. `Layer` also takes few properties, which we will see later in the chapter.
 
 After creating the route and layer, we are pushing the data into the routers `stack` on this line:
 
@@ -157,10 +158,10 @@ this.stack.push(layer);
 and then we are returning the route.
 
 ###### Note:
-The code `route.dispatch.bind(route)` is actually an empty function -- we will discuss in later chapters.
+The code `route.dispatch.bind(route)` is actually an empty function for now -- we will discuss in later chapters.
 
 ##### Route.js
-> Going to hold information about the route and the layer.
+> Going to hold information about the route and the layer, which has the handles for a given path.
 
 The main function of `Route` is going to look like the following:
 
@@ -204,7 +205,7 @@ methods.forEach(function(method){
 Note here, the route also has its own `stack` with its own instance of `Layer`.
 
 #### Layer.js
-> Contains the path and necessary function reference to execute when a path matches the given request
+> Contains the path and necessary function reference to execute when a path matches the given request.
 
 We haven't created this file yet, the whole file looks like the following:
 
@@ -243,14 +244,15 @@ methods.forEach(function (method){
 ```
 
 Once we create the lazy router, we are are setting up the `router's` details via `route` call. Remember, the application has only
-one router (See the implementation of  `lazyrouter`). Since our Route also implements all the HTTP methods, we are
+one router (See the implementation of  `lazyrouter`). Since our `Route` also implements all the HTTP methods, we are
 calling the `route` method, by passing in the incoming argument:
 
 ```
 route[method].apply(route, slice.call(arguments, 1));
 ```
 
-This will actually create a `Layer` in `Route` whose `handle` will be the passed in argument.
+This will actually create a `Layer` in `Route` whose `handle` will be the passed in argument (which is actually the
+handle we need to get executed when a path is matched).
 
 Also we are going to expose a `listen` function on application:
 
@@ -327,7 +329,7 @@ app.listen(3000, () => console.log('Example app listening on port 3000!'))
 If we run this code the following things will happen:
 
 1. `createApplication` is called. This function will set up our application function objects ready.
-2. `app` contains the reference to the fn returned by `createApplication`
+2. `app` contains the reference to the fn returned by `createApplication`.
 3. `app.get` calls the function:
 
        ```
@@ -341,7 +343,7 @@ If we run this code the following things will happen:
             }
        ```
 
-       Now, this sets our Router. Also sets Route and corresponding layer object (along with callback in `handle`).
+       Now, this sets our Router. Also sets `Route` and corresponding layer object (along with callback in `handle`).
 
 4. When `app.listen` is called, interesting things happens. Lets peak into our `app.listen` code:
 
@@ -360,7 +362,8 @@ If we run this code the following things will happen:
         };
         ```
 
-        from the `express.js` file
+        from the `express.js` file. So this `app` function would be called as a callback by the `createServer`, when it
+        gets the request
 
 5. `app.handle` calls our `handle` function of Router.
 6. Now when we fire a request to `/`, we can see it prints:
@@ -420,9 +423,9 @@ we are using `write`, `end` to send a `Hello World`!
 ##### Note:
 If you are curious here, you might be thinking why can't I use `res.send`? Well, express.js has extended the
 request object (from http module, actually its `IncomingMessage` protocol). Since we haven't gone that far, we are
-using the old-school way of sending back the data to the client.
+using the old-school way of sending back the data to the client. So remember to call `res.end()`
 
-Well-done, we have created very important abstractions, that are in express source code. In fact we made a hacky
+Well-done, we have created very important abstractions, that are in express source code. In fact we made a simple
 way to response to our request.
 
 Go ahead and checkout chap01 code and run `index.js` to see our little express in action.
