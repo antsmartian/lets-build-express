@@ -1,4 +1,4 @@
-In this chapter, we will build a our `next` function, which is at heart of express.
+In this chapter, we will build our `next` function, which is at heart of express.
 
 We wont be fully implementing the contract as per express, but we will have a minimal `next` working by the
 end of the chapter.
@@ -113,7 +113,7 @@ app.listen(3000, () => console.log('Example app listening on port 3000!'))
 Run the code. Hit `/`, we will see our `console.log` gets printed first, followed by the next matching route, which
 sends the response `Response from second matching route`.
 
-Well definitely, we need to improve upon our `next` to handle error's etc, but we got the idea of how *actually* next
+Well definitely, we need to improve upon our `next` to handle error's etc, but we got the idea of how *actually* `next`
 works. That's great.
 
 In the next chapter, we will extend `res` prototype to add functions like `send` to make our life easier.
