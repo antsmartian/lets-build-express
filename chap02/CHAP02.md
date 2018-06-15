@@ -3,7 +3,7 @@ In this chapter, we are going to make the route matching logic bit more stable.
 Currently our `handle` looks like the following:
 
 
-```
+```JavaScript
 proto.handle = function handle(req, res, out) {
     var self = this;
     var stack = self.stack;
@@ -20,7 +20,7 @@ around by printing the `Router` stack when needed).
 We will require this library `parseurl` to parse the url. Defining the util functions in `router.js` first:
 
 
-```
+```JavaScript
 var parseUrl = require('parseurl');
 
 ...
@@ -37,7 +37,7 @@ function getPathname(req) {
 Now its time to change our `handle` function:
 
 
-```
+```JavaScript
 proto.handle = function handle(req, res, out) {
     var self = this;
     var stack = self.stack;
@@ -84,7 +84,7 @@ Else repeat until the `stack` is empty.
 
 The implementation of `matchLayer` looks like this:
 
-```
+```JavaScript
 Layer.prototype.match = function match(path) {
     return this.route.path === path;
 };
@@ -94,7 +94,7 @@ Simple check. It checks `path` matches the request path. That's all!
 
 Now lets play around:
 
-```
+```JavaScript
 let express = require('./src/express')
 const app = express()
 
