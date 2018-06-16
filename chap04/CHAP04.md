@@ -25,7 +25,7 @@ It's very simple stuff, we are creating a new `layer` whose `path` is `/` and se
 We are also making the `layer.route` as `undefined` as this is not required for our use case. Then finally, we are
 putting back the `layer` into the `stack`.
 
-We knew from the previous chapters, that `app.lazyrouter` is called before routing begun. This is the right place
+We knew from the previous chapters, that `app.lazyrouter` is called before routing begins. This is the right place
 to call `Router`'s `use` :
 
 ```JavaScript
@@ -41,8 +41,6 @@ every response object.
 Lets go ahead and create a folder & file like `<base>/middleware/init.js`, whose contents would be:
 
 ```JavaScript
-var setPrototypeOf = require('setprototypeof')
-
 exports.init = function(app) {
     return function expressInit(req,res, next) {
         next();
@@ -50,7 +48,7 @@ exports.init = function(app) {
 };
 ```
 
-it just calls the `next` middleware and change our `lazyrouter` to be like this:
+the returned function `expressInit` just calls the `next` middleware. Now change our `lazyrouter` to be like this:
 
 ```JavaScript
 var middleware = require('./middleware/init');
@@ -61,10 +59,10 @@ app.lazyrouter = function lazyrouter() {
 };
 ```
 
-Now when our router is created lazily, we are setting up the function named `expressInit` on the Router's stack.
-Now we need to make sure, we run this `expressInit` function everytime when a req/res is served. We knew from last
-chapters, we have `Layer` `match` function, which checks if a given path matches the `route`. Its time to tweak
-the implementation of `match` a little bit:
+Now when our router is created lazily, we are setting up the `layer` whose `handle` is `expressInit` on the Router's stack.
+Now we need to make sure, we run this `expressInit` function everytime when a req/res is served. Also note that we
+are passing `this` (`app` instance) to the `middleware.init`). We knew from last chapters, we have `Layer` `match` function,
+which checks if a given path matches the `route`. Its time to tweak the implementation of `match` a little bit:
 
 ```JavaScript
 Layer.prototype.match = function match(path) {
@@ -156,7 +154,7 @@ app.get('/', (req, res) => {
 Set a debugger at `expressInit` function -- well yes, our `expressInit` function now gets executed.
 
 Now `expressInit` will be executed for every request our application is getting. Now its time to add a dummy `send`
-method to check if everything is working fine.
+method on `res` object to check if everything is working fine.
 
 In the `express.js` file do the following:
 
@@ -188,9 +186,9 @@ app.response = Object.create(res,{
 return app;
 ```
 
-Here we are creating a `req` and `res` from `IncomingMessage` and `ServerResponse` respectively. Also we create a
-dummy `send` function for now. After which, we attach a object called `response` whose prototype is `res` and its
-value is `app` itself.
+Here we are creating a `req` and `res` from `IncomingMessage` and `ServerResponse` respectively (coming from `http` core module).
+Also we create a dummy `send` function for now on the `res`. After which, we attach a object called
+`response` whose prototype is `res` and its value is `app` itself.
 
 The entire `createApplication` function should look like this:
 
@@ -221,7 +219,8 @@ function createApplication() {
 ```
 
 Now we have `req` & `res` object. We have `expressInit` which gets called everytime a request is fired. Most importantly
-`expressInit` init has access to the *current* `req` and `res`:
+`expressInit` init has access to the *current* `req` and `res` (remember, our `next` when calls the match route, it
+passes the `req`,`res` and `next`):
 
 ```JavaScript
 exports.init = function(app) {
@@ -232,7 +231,7 @@ exports.init = function(app) {
 ```
 
 Now we can make use of the library called `setPrototypeOf` which actually sets the prototype chain of a given object.
-Using this, we can set the current `res` prototype to be the we have attached to `app.response`:
+Using this, we can set the current `res` prototype to be the `app.response` (`app` is received in args):
 
 ```JavaScript
 var setPrototypeOf = require('setprototypeof')
@@ -262,5 +261,10 @@ app.get('/', (req, res) => {
 Run the application, go and hit `/` -- you see `wow hello world` in console.
 
 The source code of the entire chapter is in the same folder, go ahead and play around.
+
+##### Note
+If you knew express already `Router` has a `use` function. Actually we had created `use` function on `Router`
+but for solving different problem. Don't worry, we will use the same function to achieve what express's Router's
+`use` actually does.
 
 In the next chapter, we will actually implement our `send` function.
