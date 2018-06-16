@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d42fb2c7-4198-41b2-9d66-5b7b6d7d0081" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chap01/CHAP01.md" beforeDir="false" afterPath="$PROJECT_DIR$/chap01/CHAP01.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap01/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/chap01/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap01/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/chap01/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap02/CHAP02.md" beforeDir="false" afterPath="$PROJECT_DIR$/chap02/CHAP02.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap02/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/chap02/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap02/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/chap02/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/chap03/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/chap03/src/router.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chap02/src/app.js">
+        <entry file="file://$PROJECT_DIR$/chap01/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -41,19 +33,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chap01/CHAP01.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="428" column="94" selection-start-line="428" selection-start-column="94" selection-end-line="428" selection-end-column="94" />
+            <state relative-caret-position="437">
+              <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap02/CHAP02.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="1054">
               <caret line="132" column="153" selection-start-line="132" selection-start-column="153" selection-end-line="132" selection-end-column="153" />
             </state>
           </provider>
@@ -119,6 +111,7 @@
     <findStrings>
       <find>caseSensitive</find>
       <find>new Layer</find>
+      <find>slice</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,8 +132,8 @@
         <option value="$PROJECT_DIR$/chap03/src/app.js" />
         <option value="$PROJECT_DIR$/chap02/src/router.js" />
         <option value="$PROJECT_DIR$/chap03/src/router.js" />
-        <option value="$PROJECT_DIR$/chap01/CHAP01.md" />
         <option value="$PROJECT_DIR$/chap02/CHAP02.md" />
+        <option value="$PROJECT_DIR$/chap01/CHAP01.md" />
       </list>
     </option>
   </component>
@@ -238,6 +231,12 @@
             <path>
               <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
               <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
+              <item name="chap01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lets-build-express" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lets-build-express" type="462c0819:PsiDirectoryNode" />
               <item name="chap02" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,12 +320,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529034201005</updated>
-      <workItem from="1529034202134" duration="4833000" />
+      <workItem from="1529034202134" duration="4938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4833000" />
+    <option name="totallyTimeSpent" value="4938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="937" extended-state="6" />
@@ -433,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chap01/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chap02/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -496,17 +488,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chap01/CHAP01.md">
+    <entry file="file://$PROJECT_DIR$/chap02/CHAP02.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="428" column="94" selection-start-line="428" selection-start-column="94" selection-end-line="428" selection-end-column="94" />
+        <state relative-caret-position="1054">
+          <caret line="132" column="153" selection-start-line="132" selection-start-column="153" selection-end-line="132" selection-end-column="153" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chap02/CHAP02.md">
+    <entry file="file://$PROJECT_DIR$/chap01/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="132" column="153" selection-start-line="132" selection-start-column="153" selection-end-line="132" selection-end-column="153" />
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap01/CHAP01.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
         </state>
       </provider>
     </entry>

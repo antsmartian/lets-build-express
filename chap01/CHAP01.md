@@ -53,13 +53,17 @@ var methods = require('methods');
 once we require that library, we can go ahead and implement all our HTTP methods like the following:
 
 ```JavaScript
+var slice = Array.prototype.slice;
+
+. . .
+
 methods.forEach(function (method){
     app[method] = function(path) {
         this.lazyrouter()
 
         var route = this._router.route(path);
 
-        route[method].apply(route, Array.prototype.slice.call(arguments, 1));
+        route[method].apply(route, slice.call(arguments, 1));
         return this;
     }
 });
@@ -67,7 +71,8 @@ methods.forEach(function (method){
 
 ##### Note
 The `methods` library just returns all the http methods in lowercase. Actually you can see the list of methods being returned
-from [here](https://github.com/jshttp/methods/blob/master/index.js). 
+from [here](https://github.com/jshttp/methods/blob/master/index.js). Also we are creating a variable called `slice`
+which we will use in the whole file. 
 
 Here we are iterating over the available methods, and creating the functions on `app`. Inside the function, there are
 quite a few interesting things happening. The function calls `this.lazyrouter()` -- which means for the given application
