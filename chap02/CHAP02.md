@@ -130,5 +130,5 @@ curl --request POST http://localhost:3000/post
 -- Data from post :)
 ```
 
-That's cool progress. We have made our routing logic works. In the next chapter, we will actually build a small
+That's cool progress. We have made our routing logic works. In the [next](https://github.com/antoaravinth/lets-build-express/blob/master/chap03/CHAP03.md) chapter, we will actually build a small
 `next` (the magic guy).

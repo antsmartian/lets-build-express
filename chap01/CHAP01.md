@@ -35,6 +35,9 @@ app.init = function() {
     this.cache = {};
     this.engines = {};
     this.settings = {}
+
+    //for holding the application router
+    this._router = undefined;
 };
 ```
 
@@ -73,19 +76,12 @@ we are going to create an `Router`. The code for  `lazyrouter` looks like the fo
 ```JavaScript
 app.lazyrouter = function lazyrouter() {
     if(!this._router) {
-        this._router = new Router({
-            caseSensitive: this.enabled('case sensitive routing'),
-            strict: this.enabled('strict routing')
-        })
+        this._router = new Router({})
     }
 };
 ```
 
 As the name suggest, we are first checking if `this._router` is present, if not creating a new `Router`.
-
-
-##### Note: We are passing params like `caseSensitive` , `strict` -- which we will see in the upcoming chapters. The
-`enabled` implementation is straight forward, so skipping the implementation details here.
 
 We will come back to this piece of code later in this chapter:
 
@@ -136,11 +132,7 @@ add specific routes into the `stack`. This function is called as `route`:
 proto.route = function route(path) {
     var route = new Route(path)
 
-    var layer = new Layer(path,{
-        sensitive: this.caseSensitive,
-        strict: this.strict,
-        end: true
-    },route.dispatch.bind(route))
+    var layer = new Layer(path,{},route.dispatch.bind(route))
 
     layer.route = route;
 
@@ -434,4 +426,4 @@ way to response to our request.
 
 Go ahead and checkout chap01 code and run `index.js` to see our little express in action.
 
-In the next chapter, we are going to improve upon our `handle` to match the `routes` with the given URL.
+In the [next](https://github.com/antoaravinth/lets-build-express/blob/master/chap02/CHAP02.md) chapter, we are going to improve upon our `handle` to match the `routes` with the given URL.

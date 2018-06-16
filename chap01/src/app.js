@@ -11,6 +11,8 @@ app.init = function() {
     this.cache = {};
     this.engines = {};
     this.settings = {}
+
+    this._router = undefined;
 };
 
 app.set = function set(setting,val) {
@@ -37,10 +39,7 @@ app.enabled = function enabled(setting) {
 
 app.lazyrouter = function lazyrouter() {
     if(!this._router) {
-        this._router = new Router({
-            caseSensitive: this.enabled('case sensitive routing'),
-            strict: this.enabled('strict routing')
-        })
+        this._router = new Router({})
     }
 };
 
