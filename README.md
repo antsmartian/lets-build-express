@@ -12,8 +12,9 @@ Here is the TOC:
 1. [Chapter 01 -- Building Express Abstractions](https://github.com/antoaravinth/lets-build-express/blob/master/chap01/CHAP01.md)
 2. [Chapter 02 -- Handling routes out of the box](https://github.com/antoaravinth/lets-build-express/blob/master/chap02/CHAP02.md)
 3. [Chapter 03 -- Implement `next` function](https://github.com/antoaravinth/lets-build-express/blob/master/chap03/CHAP03.md)
-4. Chapter 04 -- Extending Response Object (WIP)
-5. More to come. 
+4. Chapter 04 -- [Extending Response Object](https://github.com/antoaravinth/lets-build-express/blob/master/chap04/CHAP04.md)
+5. Chapter 05 -- Implementing `send` on `response` (WIP)
+6. More to come.
 
 #### Note
 Its work in progress, but minimal working library and the corresponding tutorial is done. 
