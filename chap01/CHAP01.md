@@ -16,9 +16,9 @@ function createApplication() {
 }
 ```
 
+
 Nothing fancy over here, we are just exporting the function called `createApplication`. The function creates a function
-reference called `app` and returns it. Note that the function expects `req, res` and even `next`. Who will be sending
-these arguments is interesting, which we will see later.
+reference called `app` and returns it. This returned `app` is what end user will get when they call `express()`.  Note that the function expects `req, res` and even `next` (The `req` is actually the incoming request, `res` is the http response object, `next` is our express specific function) - who will be sending these arguments is interesting, which we will see later. So its clear that the end user when they call `express()`, our `app` is returned, so we need to add necessary methods to the `app` object i.e `get`, `post` etc. 
 
 
 #### Application.js
@@ -56,11 +56,15 @@ methods.forEach(function (method){
 
         var route = this._router.route(path);
 
-        route[method].apply(route, slice.call(arguments, 1));
+        route[method].apply(route, Array.prototype.slice.call(arguments, 1));
         return this;
     }
 });
 ```
+
+##### Note
+The `methods` library just returns all the http methods in lowercase. Actually you can see the list of methods being returned
+from [here](https://github.com/jshttp/methods/blob/master/index.js). 
 
 Here we are iterating over the available methods, and creating the functions on `app`. Inside the function, there are
 quite a few interesting things happening. The function calls `this.lazyrouter()` -- which means for the given application
