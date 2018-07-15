@@ -13,7 +13,7 @@ Here is the TOC:
 2. [Chapter 02 -- Handling routes out of the box](https://github.com/antoaravinth/lets-build-express/blob/master/chap02/CHAP02.md)
 3. [Chapter 03 -- Implement `next` function](https://github.com/antoaravinth/lets-build-express/blob/master/chap03/CHAP03.md)
 4. [Chapter 04 -- Extending Response Object](https://github.com/antoaravinth/lets-build-express/blob/master/chap04/CHAP04.md)
-5. [Chapter 05 -- Implementing `send`/`json` on `response`]((https://github.com/antoaravinth/lets-build-express/blob/master/chap05/CHAP05.md))
+5. [Chapter 05 -- Implementing `send`/`json` on `response`](https://github.com/antoaravinth/lets-build-express/blob/master/chap05/CHAP05.md)
 6. Chapter 06 -- Error Handling (WIP)
 7. More to come.
 

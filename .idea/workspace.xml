@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d42fb2c7-4198-41b2-9d66-5b7b6d7d0081" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,7 +17,7 @@
     <session id="-1167371713">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="js" value="12" />
           <entry key="md" value="4" />
         </counts>
@@ -26,19 +25,19 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="12" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="325" />
-          <entry key="md" value="7481" />
+          <entry key="md" value="7488" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="325" />
-          <entry key="PLAIN_TEXT" value="7481" />
+          <entry key="PLAIN_TEXT" value="7488" />
         </counts>
       </usages-collector>
     </session>
@@ -66,10 +65,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap05/CHAP05.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="148" column="53" selection-start-line="148" selection-start-column="53" selection-end-line="148" selection-end-column="53" />
+            <state relative-caret-position="-65">
+              <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chap05/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -103,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+              <caret line="15" column="140" lean-forward="true" selection-start-line="15" selection-start-column="140" selection-end-line="15" selection-end-column="140" />
             </state>
           </provider>
         </entry>
@@ -161,7 +165,6 @@
     <handled-path value="$PROJECT_DIR$/chap02/node_modules" />
     <handled-path value="$PROJECT_DIR$/chap03/node_modules" />
     <handled-path value="$PROJECT_DIR$/chap04/node_modules" />
-    <handled-path value="$PROJECT_DIR$/chap05/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -226,6 +229,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chap05" />
       <recent name="$PROJECT_DIR$/chap04/src" />
       <recent name="$PROJECT_DIR$/chap04" />
       <recent name="$PROJECT_DIR$/chap03" />
@@ -279,12 +283,12 @@
       <updated>1529034201005</updated>
       <workItem from="1529034202134" duration="5401000" />
       <workItem from="1529153748130" duration="3325000" />
-      <workItem from="1531627130025" duration="3360000" />
+      <workItem from="1531627130025" duration="3656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12086000" />
+    <option name="totallyTimeSpent" value="12382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="934" extended-state="6" />
@@ -532,15 +536,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chap05/CHAP05.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="148" column="53" selection-start-line="148" selection-start-column="53" selection-end-line="148" selection-end-column="53" />
+        <state relative-caret-position="-65">
+          <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap05/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <caret line="15" column="140" lean-forward="true" selection-start-line="15" selection-start-column="140" selection-end-line="15" selection-end-column="140" />
         </state>
       </provider>
     </entry>
