@@ -116,4 +116,4 @@ sends the response `Response from second matching route`.
 Well definitely, we need to improve upon our `next` to handle error's etc, but we got the idea of how *actually* `next`
 works. That's great.
 
-In the next chapter, we will extend `res` prototype to add functions like `send` to make our life easier.
+In the [next](https://github.com/antoaravinth/lets-build-express/blob/master/chap04/CHAP04.md) chapter, we will extend `res` prototype to add functions like `send` to make our life easier.

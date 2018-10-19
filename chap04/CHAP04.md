@@ -267,4 +267,4 @@ If you knew express already `Router` has a `use` function. Actually we had creat
 but for solving different problem. Don't worry, we will use the same function to achieve what express's Router's
 `use` actually does.
 
-In the next chapter, we will actually implement our `send` function.
+In the [next](https://github.com/antoaravinth/lets-build-express/blob/master/chap05/CHAP05.md) chapter, we will actually implement our `send` function.
