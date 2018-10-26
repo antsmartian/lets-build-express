@@ -24,4 +24,4 @@ Its work in progress, but minimal working library and the corresponding tutorial
 Feel free to improve this repo: grammar mistakes, technical glitches, maybe translations?  Happy to accept PRs.
 
 #### License
-[MIT] (https://github.com/antoaravinth/lets-build-express/blob/master/LICENSE.md)
+[MIT](https://github.com/antoaravinth/lets-build-express/blob/master/LICENSE.md)
