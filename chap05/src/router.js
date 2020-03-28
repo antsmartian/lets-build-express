@@ -71,7 +71,9 @@ proto.handle = function handle(req, res, out) {
                 continue;
             }
 
-            route.stack[0].handle_request(req, res, next);
+            for (const stack of route.stack) {
+                stack.handle_request(req, res, next);
+            }
         }
 
         if(match) {
