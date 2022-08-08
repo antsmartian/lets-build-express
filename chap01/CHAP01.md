@@ -428,7 +428,7 @@ request object (from http module, actually its `IncomingMessage` protocol). Sinc
 using the old-school way of sending back the data to the client. So remember to call `res.end()`
 
 Well-done, we have created very important abstractions, that are in express source code. In fact we made a simple
-way to response to our request.
+way to respond to our request.
 
 Go ahead and checkout chap01 code and run `index.js` to see our little express in action.
 
